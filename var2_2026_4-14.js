@@ -275,7 +275,7 @@ function initController(a,x="0",y="0",late=1,id="") {
   var mx=0
   var my=0
   var ing=false
-  document.onpointerup=()=>{
+  d.onpointerup=()=>{
     mx=my=0
     this.x=this.y=0
     ing=false
@@ -357,7 +357,7 @@ class SpaceButton{
     var key={space:0}
     d.id=id
     d.onpointerdown=()=>{key.space=true}
-    d.onpointerup=()=>{key.space=false}
+    d.onclick=()=>{key.space=false}
     d.onpointerleave=()=>{key.space=false}
     a.appendChild(d)
     document.addEventListener("keydown",(e)=>{
