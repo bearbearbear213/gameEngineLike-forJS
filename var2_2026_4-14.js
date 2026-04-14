@@ -1,4 +1,4 @@
-  <body style="user-select: none;touch-action: none; -ms-touch-action: none;font-size:calc(min(5vw,5vh/9*15))">
+  var canvas_text=`<body style="user-select: none;touch-action: none; -ms-touch-action: none;font-size:calc(min(5vw,5vh/9*15))">
   <div style="position: absolute; width: 100vw; height: 100vh; left: 0; top: 0">
     <div id="Main" style="
      overflow:hidden;
@@ -13,8 +13,7 @@
         <canvas width="1600" height="900" id="canvas" style="width:100%;height:100%;position:absolute;"></canvas>
     </div>
   </div>
-  </body>
-  <script>
+  </body>`
 // a,b,c,d は [x,y]
 // 線分 AB と 線分 CD が交わる（端点で触れるのもOK）なら true
 function lineCol(seg1, seg2) {
@@ -215,8 +214,6 @@ function col(a,b){
     canvas.fillRect(x * 10, y * 10, w * 10, h * 10)
   }
   var ok = console.log
-  </script>
-<script>
   class Keyboard {
     constructor() {
       this.keyboard = {};
@@ -377,4 +374,3 @@ class SpaceButton{
     })
   }
 }
-</script>
