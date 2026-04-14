@@ -14,6 +14,7 @@
     </div>
   </div>
   </body>`
+    document.getElementById("loadCanvas").innerHTML=canvas_text
 // a,b,c,d は [x,y]
 // 線分 AB と 線分 CD が交わる（端点で触れるのもOK）なら true
 function lineCol(seg1, seg2) {
