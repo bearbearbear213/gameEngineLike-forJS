@@ -324,6 +324,13 @@ function initController(a,x="0",y="0",late=1,id="") {
       }
       m++
     }
+    m=0
+    for (var n of `W/S/A/D`.split("/")) {
+      if(K.get()[`W/S/A/D`.split("/")[m]]){
+        n1[m]=1
+      }
+      m++
+    }
     var mx2,my2
     mx2=my2=0
     if(n1[0]==1)my2=0.5
