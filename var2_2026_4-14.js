@@ -353,7 +353,7 @@ class SpaceButton{
   { var d=document.createElement("div")
     d.style=`
     position:absolute;
-    width:calc(${late*30}vh);
+    width:calc(${late*100/18*3}%);
     height:${30*late}%;
     touch-action:none;
     left:${x};
