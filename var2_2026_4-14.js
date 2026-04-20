@@ -349,7 +349,7 @@ function initController(a,x="0",y="0",late=1,id="") {
   return this
 }
 class SpaceButton{
-  constructor(a,x=0,y=0,late=1,color="rgba(100,100,100,0.4)",id="",useKey="Spece")
+  constructor(a,x=0,y=0,late=1,color="rgba(100,100,100,0.4)",id="",useKey="Space")
   { var d=document.createElement("div")
     d.style=`
     position:absolute;
