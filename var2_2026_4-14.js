@@ -349,7 +349,7 @@ function initController(a,x="0",y="0",late=1,id="") {
   return this
 }
 class SpaceButton{
-  constructor(a,x=0,y=0,late=1,color="rgba(100,100,100,0.4)",id="")
+  constructor(a,x=0,y=0,late=1,color="rgba(100,100,100,0.4)",id="",useKey="Spece")
   { var d=document.createElement("div")
     d.style=`
     position:absolute;
@@ -368,10 +368,10 @@ class SpaceButton{
     d.onpointerleave=()=>{key.space=false}
     a.appendChild(d)
     document.addEventListener("keydown",(e)=>{
-      if(e.code=="Space")key.space=true
+      if(e.code==useKey)key.space=true
     })
     document.addEventListener("keyup",(e)=>{
-      if(e.code=="Space")key.space=false
+      if(e.code==useKey)key.space=false
     })
     this.update=(()=>{
       if(key.space){
